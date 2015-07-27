@@ -12,20 +12,24 @@
 	<dict>
 		<key>0E090632-02C4-4C2E-9E3D-837151FD7A54</key>
 		<string>https://github.com/tfsyed/WeatherVain.git</string>
+		<key>FBF56794F78272FE6E867FFBCB5023EB0BA9114C</key>
+		<string>https://github.com/chhernandez/Weathervain2014.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>the_weather_vain/WeatherVain.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0E090632-02C4-4C2E-9E3D-837151FD7A54</key>
+		<string>../../../WeatherVain</string>
+		<key>FBF56794F78272FE6E867FFBCB5023EB0BA9114C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/tfsyed/WeatherVain.git</string>
+	<string>https://github.com/chhernandez/Weathervain2014.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0E090632-02C4-4C2E-9E3D-837151FD7A54</string>
+	<string>FBF56794F78272FE6E867FFBCB5023EB0BA9114C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>0E090632-02C4-4C2E-9E3D-837151FD7A54</string>
 			<key>IDESourceControlWCCName</key>
 			<string>WeatherVain</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FBF56794F78272FE6E867FFBCB5023EB0BA9114C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Weathervain2014</string>
 		</dict>
 	</array>
 </dict>

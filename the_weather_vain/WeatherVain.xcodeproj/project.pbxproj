@@ -115,7 +115,6 @@
 		6000106E18E3698000C29D23 /* cdkRangeSliderKnobLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6000106D18E3698000C29D23 /* cdkRangeSliderKnobLayer.m */; };
 		6099E4D61900CE59004ECF0D /* parseloginbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6099E4CD1900CE59004ECF0D /* parseloginbg.png */; };
 		6099E4D71900CE59004ECF0D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6099E4CE1900CE59004ECF0D /* placeholder.png */; };
-		6099E4E01900D0B3004ECF0D /* wvlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6099E4DF1900D0B3004ECF0D /* wvlogo.png */; };
 		6099E4E21900D16E004ECF0D /* wvlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6099E4E11900D16E004ECF0D /* wvlogo.png */; };
 		60AA7E4F190B52A4006C3018 /* weather-broken.png in Resources */ = {isa = PBXBuildFile; fileRef = 60AA7E35190B52A4006C3018 /* weather-broken.png */; };
 		60AA7E50190B52A4006C3018 /* weather-broken.png in Resources */ = {isa = PBXBuildFile; fileRef = 60AA7E35190B52A4006C3018 /* weather-broken.png */; };
@@ -938,7 +937,7 @@
 		4837C58418A6AA130022CFDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = CodeKite;
 				TargetAttributes = {
 					4837C58B18A6AA140022CFDD = {
@@ -1033,7 +1032,6 @@
 				60AA7E8D190B52BC006C3018 /* camera.png in Resources */,
 				60AA7E6D190B52A4006C3018 /* weather-rain@2x.png in Resources */,
 				6099E4E21900D16E004ECF0D /* wvlogo.png in Resources */,
-				6099E4E01900D0B3004ECF0D /* wvlogo.png in Resources */,
 				4827D366190C20220087B4EB /* cloud.png in Resources */,
 				60AA7E57190B52A4006C3018 /* weather-few-night.png in Resources */,
 				60AA7E6F190B52A4006C3018 /* weather-scattered copy.png in Resources */,
@@ -1307,7 +1305,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1348,7 +1345,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1439,7 +1435,6 @@
 		4837C5C218A6AA140022CFDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherVain.app/WeatherVain";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1464,7 +1459,6 @@
 		4837C5C318A6AA140022CFDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherVain.app/WeatherVain";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

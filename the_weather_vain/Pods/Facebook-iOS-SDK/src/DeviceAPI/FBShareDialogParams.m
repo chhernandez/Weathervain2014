@@ -40,7 +40,7 @@
     [_link release];
     [_name release];
     [_caption release];
-    [_description release];
+ //   [_description release];
     [_picture release];
     [_friends release];
     [_place release];
