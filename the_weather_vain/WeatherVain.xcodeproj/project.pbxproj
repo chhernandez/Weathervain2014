@@ -1434,6 +1434,7 @@
 		};
 		4837C5C218A6AA140022CFDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7B091B09EE4C33B9A39607 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherVain.app/WeatherVain";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1458,6 +1459,7 @@
 		};
 		4837C5C318A6AA140022CFDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7B091B09EE4C33B9A39607 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WeatherVain.app/WeatherVain";
 				FRAMEWORK_SEARCH_PATHS = (
