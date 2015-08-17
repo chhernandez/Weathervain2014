@@ -16,7 +16,7 @@
 #import <FontAwesomeKit/FAKFontAwesome.h>
 #import <Parse/Parse.h>
 #import "WVTabBarViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 NSInteger currentTemp;
 NSString *tempTag;
@@ -31,6 +31,12 @@ typedef void (^checkEmptyBlock)(BOOL);
 @property (nonatomic, strong) IBOutlet UIButton *fullScreenButton;
 @property (nonatomic, assign) CGFloat screenHeight;
 @property (nonatomic, strong) PFLogInViewController *logInViewController;
+@property (weak, nonatomic) IBOutlet UIView *circle1;
+@property (weak, nonatomic) IBOutlet UIView *circle2;
+@property (weak, nonatomic) IBOutlet UIView *circle3;
+@property (weak, nonatomic) IBOutlet UIView *circle4;
+
+
 @end
 
 @implementation WXController
@@ -111,10 +117,26 @@ NSUserDefaults *standardDefaults;
     // that takes into account for retina display as well as regular display
     
     /****custom navigation background****/
-    UINavigationBar *home_NavBar = [self.navigationController navigationBar];
+    /*
+     UINavigationBar *home_NavBar = [self.navigationController navigationBar];
     UIImage *img = [UIImage imageNamed:@"navigationBG.png"];
     [home_NavBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
+    */
    
+
+    
+    // make circular
+    _circle1.layer.cornerRadius = _circle1.frame.size.height /2;
+    _circle1.layer.masksToBounds = YES;
+    
+    _circle2.layer.cornerRadius = _circle2.frame.size.height /2;
+    _circle2.layer.masksToBounds = YES;
+
+    _circle3.layer.cornerRadius = _circle3.frame.size.height /2;
+    _circle3.layer.masksToBounds = YES;
+
+    _circle4.layer.cornerRadius = _circle4.frame.size.height /2;
+    _circle4.layer.masksToBounds = YES;
     
   //  [[UILabel appearance] setFont:[UIFont fontWithName:@"RobotoCondensed-Regular" size:18.0]];
 
@@ -530,7 +552,7 @@ NSUserDefaults *standardDefaults;
     UILabel *temperatureLabel = [[UILabel alloc] initWithFrame:temperatureFrame];
     temperatureLabel.backgroundColor = [UIColor clearColor];
     temperatureLabel.textColor = [UIColor whiteColor];
-    temperatureLabel.text = @"0°";
+    temperatureLabel.text = @"82°";
     temperatureLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:30]; //120
     //[header addSubview:temperatureLabel];
     
@@ -538,7 +560,7 @@ NSUserDefaults *standardDefaults;
     
     self.myWeatherTemp.backgroundColor = [UIColor clearColor];
     self.myWeatherTemp.textColor = [UIColor whiteColor];
-    self.myWeatherTemp.text = @"0°";
+    self.myWeatherTemp.text = @"82°";
   //  self.myWeatherTemp.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:30];
     
     // high & low

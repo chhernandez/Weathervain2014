@@ -195,6 +195,7 @@
 		60EEEF6D19023AD100CE413D /* outerwear.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EEEF6719023AD100CE413D /* outerwear.png */; };
 		60EEEF6E19023AD100CE413D /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EEEF6819023AD100CE413D /* shoes.png */; };
 		60EEEF6F19023AD100CE413D /* tops.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EEEF6919023AD100CE413D /* tops.png */; };
+		B5201A5C1B8217BE006EBA07 /* Hot-thermometer.png in Resources */ = {isa = PBXBuildFile; fileRef = B5201A5B1B8217BE006EBA07 /* Hot-thermometer.png */; };
 		CA50B831190A2E3000431C82 /* navigationBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA50B82E190A2E3000431C82 /* navigationBG@2x.png */; };
 		CA50B832190A2E3000431C82 /* navigationBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA50B82E190A2E3000431C82 /* navigationBG@2x.png */; };
 		CA50B833190A2E3000431C82 /* profile_BottomBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA50B82F190A2E3000431C82 /* profile_BottomBG@2x.png */; };
@@ -460,6 +461,7 @@
 		60EEEF6719023AD100CE413D /* outerwear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outerwear.png; sourceTree = "<group>"; };
 		60EEEF6819023AD100CE413D /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
 		60EEEF6919023AD100CE413D /* tops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tops.png; sourceTree = "<group>"; };
+		B5201A5B1B8217BE006EBA07 /* Hot-thermometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hot-thermometer.png"; sourceTree = "<group>"; };
 		CA50B82E190A2E3000431C82 /* navigationBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBG@2x.png"; sourceTree = "<group>"; };
 		CA50B82F190A2E3000431C82 /* profile_BottomBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_BottomBG@2x.png"; sourceTree = "<group>"; };
 		CA50B830190A2E3000431C82 /* profile_TopBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_TopBG@2x.png"; sourceTree = "<group>"; };
@@ -701,6 +703,7 @@
 				4827D362190C20220087B4EB /* cloud.png */,
 				4827D363190C20220087B4EB /* cloud@2x.png */,
 				4827D36C190F7C500087B4EB /* Default-568h@2x.png */,
+				B5201A5B1B8217BE006EBA07 /* Hot-thermometer.png */,
 				4827D36D190F7C500087B4EB /* Default.png */,
 				4827D36E190F7C500087B4EB /* Default@2x.png */,
 				4827D364190C20220087B4EB /* profileicon.png */,
@@ -941,7 +944,7 @@
 				ORGANIZATIONNAME = CodeKite;
 				TargetAttributes = {
 					4837C58B18A6AA140022CFDD = {
-						DevelopmentTeam = 3BYGVDTF6M;
+						DevelopmentTeam = 5P989GGQ4W;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -983,6 +986,7 @@
 				4827D359190B6FB40087B4EB /* frigidButton@2x.png in Resources */,
 				4BA5454B190BE98E0069FF84 /* RobotoCondensed-Regular.ttf in Resources */,
 				60EEEF6C19023AD100CE413D /* dress.png in Resources */,
+				B5201A5C1B8217BE006EBA07 /* Hot-thermometer.png in Resources */,
 				60AA7E5F190B52A4006C3018 /* weather-mist.png in Resources */,
 				4827D351190B6FB40087B4EB /* mildButton.png in Resources */,
 				60EEEF6D19023AD100CE413D /* outerwear.png in Resources */,
@@ -1405,7 +1409,7 @@
 				);
 				INFOPLIST_FILE = "WeatherVain/WeatherVain-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EA13C3B2-D709-4A3D-A977-39CE4594D305";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1427,7 +1431,7 @@
 				GCC_PREFIX_HEADER = "WeatherVain/WeatherVain-Prefix.pch";
 				INFOPLIST_FILE = "WeatherVain/WeatherVain-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "EA13C3B2-D709-4A3D-A977-39CE4594D305";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
