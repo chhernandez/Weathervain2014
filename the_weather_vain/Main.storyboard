@@ -803,7 +803,9 @@
                         <outlet property="circle3" destination="P9x-Bc-Re2" id="U6M-Cg-Rtc"/>
                         <outlet property="circle4" destination="nd5-uv-kZV" id="IT0-3g-muO"/>
                         <outlet property="myWeatherDescription" destination="gXG-l9-HYs" id="FlT-34-SPA"/>
+                        <outlet property="myWeatherIcon" destination="PkK-XB-LUz" id="VO5-ij-1oi"/>
                         <outlet property="myWeatherTag1" destination="kgd-bX-bsK" id="YJJ-uY-IqE"/>
+                        <outlet property="myWeatherTemp" destination="PYK-5x-6Xi" id="S0b-wo-mM0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSO-zT-sjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -882,7 +884,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="WAq-Xc-t53"/>
+        <segue reference="sme-Bv-6zz"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.56862747669219971" blue="0.66666668653488159" alpha="1" colorSpace="deviceRGB"/>
 </document>

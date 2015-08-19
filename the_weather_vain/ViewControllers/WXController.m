@@ -31,6 +31,7 @@ typedef void (^checkEmptyBlock)(BOOL);
 @property (nonatomic, strong) IBOutlet UIButton *fullScreenButton;
 @property (nonatomic, assign) CGFloat screenHeight;
 @property (nonatomic, strong) PFLogInViewController *logInViewController;
+
 @property (weak, nonatomic) IBOutlet UIView *circle1;
 @property (weak, nonatomic) IBOutlet UIView *circle2;
 @property (weak, nonatomic) IBOutlet UIView *circle3;

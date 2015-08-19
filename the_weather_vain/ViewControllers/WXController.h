@@ -21,11 +21,12 @@
 @property (weak, nonatomic) IBOutlet UIImageView *Bottoms;
 @property (weak, nonatomic) IBOutlet UIImageView *Accessories;
 @property (weak, nonatomic) IBOutlet UIImageView *Shoes;
-@property (weak, nonatomic) IBOutlet UIImageView *myWeatherIcon;
-@property (weak, nonatomic) IBOutlet UILabel *myWeatherTemp;
 @property (weak, nonatomic) IBOutlet UILabel *myWeatherDescription;
 @property (weak, nonatomic) IBOutlet UIImageView *myWeatherTag1;
 @property (weak, nonatomic) IBOutlet UIImageView *myWeatherTag2;
+
+@property (strong, nonatomic) IBOutlet UIImageView *myWeatherIcon;
+@property (strong, nonatomic) IBOutlet UILabel *myWeatherTemp;
 
 @property (strong, nonatomic) NSArray *frigidArray;
 @property (strong, nonatomic) NSArray *coldArray;
