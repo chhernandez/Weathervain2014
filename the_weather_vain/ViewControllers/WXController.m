@@ -31,6 +31,14 @@ typedef void (^checkEmptyBlock)(BOOL);
 @property (nonatomic, strong) IBOutlet UIButton *fullScreenButton;
 @property (nonatomic, assign) CGFloat screenHeight;
 @property (nonatomic, strong) PFLogInViewController *logInViewController;
+@property (strong, nonatomic) IBOutlet UIView *circle1;
+@property (strong, nonatomic) IBOutlet UIView *circle2;
+@property (strong, nonatomic) IBOutlet UIView *circle3;
+@property (strong, nonatomic) IBOutlet UIView *circle4;
+@property (strong, nonatomic) IBOutlet UIView *circle5;
+
+
+
 @end
 
 @implementation WXController
@@ -98,7 +106,28 @@ NSUserDefaults *standardDefaults;
     }];
     
     }
+    
+    
+    /******* NAVIGATION BAR *******/
+    
+    // for back button and arrow
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    //self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    // title - roboto
 
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor whiteColor],NSForegroundColorAttributeName,
+      [UIFont fontWithName:@"RobotoCondensed-Light" size:21],
+      NSFontAttributeName,
+      nil]];
+    [self.navigationController.navigationBar setTranslucent:NO];
+
+
+    
 }
 
 - (void)viewDidLoad
@@ -107,14 +136,40 @@ NSUserDefaults *standardDefaults;
     
     
     
+    // make circular
+    _circle1.layer.cornerRadius = _circle1.frame.size.height /2;
+    _circle1.layer.masksToBounds = YES;
+    
+    _circle2.layer.cornerRadius = _circle2.frame.size.height /2;
+    _circle2.layer.masksToBounds = YES;
+    
+    _circle3.layer.cornerRadius = _circle3.frame.size.height /2;
+    _circle3.layer.masksToBounds = YES;
+    
+    _circle4.layer.cornerRadius = _circle4.frame.size.height /2;
+    _circle4.layer.masksToBounds = YES;
+    
+    _circle5.layer.cornerRadius = _circle5.frame.size.height /2;
+    _circle5.layer.masksToBounds = YES;
+    
+    
+    
+    
+    
+    
+    
+    
     // custom navigation bar image for main outfit selection page
     // that takes into account for retina display as well as regular display
     
     /****custom navigation background****/
+    /*
     UINavigationBar *home_NavBar = [self.navigationController navigationBar];
     UIImage *img = [UIImage imageNamed:@"navigationBG.png"];
     [home_NavBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
-   
+    */
+
+    
     
   //  [[UILabel appearance] setFont:[UIFont fontWithName:@"RobotoCondensed-Regular" size:18.0]];
 
@@ -283,7 +338,7 @@ NSUserDefaults *standardDefaults;
                 
             }
             // pick value from topsArray randomly
-            uint32_t rnd = arc4random_uniform([topsArray count]);
+            uint32_t rnd = arc4random_uniform((uint32_t)[topsArray count]);
             NSObject *randomTop = [topsArray objectAtIndex:rnd];
             NSString *topLabel = [randomTop valueForKey:@"Label"];
             NSLog(@"chosen top: %@", topLabel);
@@ -330,7 +385,7 @@ NSUserDefaults *standardDefaults;
             }
             
             // pick bottom randomly
-            uint32_t rnd1 = arc4random_uniform([bottomsArray count]);
+            uint32_t rnd1 = arc4random_uniform((uint32_t)[bottomsArray count]);
             NSObject *randomBottom = [bottomsArray objectAtIndex:rnd1];
             NSString *bottomLabel = [randomBottom valueForKey:@"Label"];
             NSLog(@"chosen bottom: %@", bottomLabel);
@@ -391,7 +446,7 @@ NSUserDefaults *standardDefaults;
             }
             
             // pick clothing randomly
-            uint32_t rnd3 = arc4random_uniform([outerwearArray count]);
+            uint32_t rnd3 = arc4random_uniform((uint32_t)[outerwearArray count]);
             NSObject *randomOuterwear = [outerwearArray objectAtIndex:rnd3];
             NSString *outerwearLabel = [randomOuterwear valueForKey:@"Label"];
             NSLog(@"chosen outerwear: %@", outerwearLabel);
@@ -634,24 +689,27 @@ NSUserDefaults *standardDefaults;
                            ];
     
     // created array for each temperature for later use. chh 05082014
-    uint32_t rndCold = arc4random_uniform([self.coldArray count]);
+    /*
+    uint32_t rndCold = arc4random_uniform((uint32_t)[self.coldArray count]);
     NSString *randomCold = [self.coldArray objectAtIndex:rndCold];
     
-    uint32_t rndBrisk = arc4random_uniform([self.briskArray count]);
+    uint32_t rndBrisk = arc4random_uniform((uint32_t)[self.briskArray count]);
     NSString *randomBrisk = [self.briskArray objectAtIndex:rndBrisk];
     
-    uint32_t rndMild = arc4random_uniform([self.mildArray count]);
+    uint32_t rndMild = arc4random_uniform((uint32_t)[self.mildArray count]);
     NSString *randomMild = [self.mildArray objectAtIndex:rndMild];
     
-    uint32_t rndHot = arc4random_uniform([self.hotArray count]);
+    uint32_t rndHot = arc4random_uniform((uint32_t)[self.hotArray count]);
     NSString *randomHot = [self.hotArray objectAtIndex:rndHot];
     
-    uint32_t rndSizzling = arc4random_uniform([self.sizzlingArray count]);
+    uint32_t rndSizzling = arc4random_uniform((uint32_t)[self.sizzlingArray count]);
     NSString *randomSizzling = [self.sizzlingArray objectAtIndex:rndSizzling];
-    uint32_t rndFrigid = arc4random_uniform([self.frigidArray count]);
-    NSString *randomFrigid = [self.frigidArray objectAtIndex:rndFrigid];
     
-    uint32_t rndWarm = arc4random_uniform([self.warmArray count]);
+    uint32_t rndFrigid = arc4random_uniform((uint32_t)[self.frigidArray count]);
+    NSString *randomFrigid = [self.frigidArray objectAtIndex:rndFrigid];
+    */
+    
+    uint32_t rndWarm = arc4random_uniform((uint32_t)[self.warmArray count]);
     NSString *randomWarm = [self.warmArray objectAtIndex:rndWarm];
     
     

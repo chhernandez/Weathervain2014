@@ -11,5 +11,6 @@
 
 @interface SettingsViewController : UITableViewController
 - (IBAction)mySignOut:(id)sender;
+@property (strong, nonatomic) IBOutlet UITableViewCell *sdf;
 
 @end

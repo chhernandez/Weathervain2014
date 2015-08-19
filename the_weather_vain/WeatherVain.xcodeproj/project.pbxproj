@@ -195,6 +195,9 @@
 		60EEEF6D19023AD100CE413D /* outerwear.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EEEF6719023AD100CE413D /* outerwear.png */; };
 		60EEEF6E19023AD100CE413D /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EEEF6819023AD100CE413D /* shoes.png */; };
 		60EEEF6F19023AD100CE413D /* tops.png in Resources */ = {isa = PBXBuildFile; fileRef = 60EEEF6919023AD100CE413D /* tops.png */; };
+		B57EF5581B84EC6300684470 /* blurBack11.png in Resources */ = {isa = PBXBuildFile; fileRef = B57EF5571B84EC6300684470 /* blurBack11.png */; };
+		B57EF55B1B84F63800684470 /* weather_background.png in Resources */ = {isa = PBXBuildFile; fileRef = B57EF5591B84F63800684470 /* weather_background.png */; };
+		B57EF55C1B84F63800684470 /* weather_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B57EF55A1B84F63800684470 /* weather_screen.png */; };
 		CA50B831190A2E3000431C82 /* navigationBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA50B82E190A2E3000431C82 /* navigationBG@2x.png */; };
 		CA50B832190A2E3000431C82 /* navigationBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA50B82E190A2E3000431C82 /* navigationBG@2x.png */; };
 		CA50B833190A2E3000431C82 /* profile_BottomBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA50B82F190A2E3000431C82 /* profile_BottomBG@2x.png */; };
@@ -460,6 +463,9 @@
 		60EEEF6719023AD100CE413D /* outerwear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outerwear.png; sourceTree = "<group>"; };
 		60EEEF6819023AD100CE413D /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
 		60EEEF6919023AD100CE413D /* tops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tops.png; sourceTree = "<group>"; };
+		B57EF5571B84EC6300684470 /* blurBack11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blurBack11.png; sourceTree = "<group>"; };
+		B57EF5591B84F63800684470 /* weather_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_background.png; sourceTree = "<group>"; };
+		B57EF55A1B84F63800684470 /* weather_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weather_screen.png; sourceTree = "<group>"; };
 		CA50B82E190A2E3000431C82 /* navigationBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBG@2x.png"; sourceTree = "<group>"; };
 		CA50B82F190A2E3000431C82 /* profile_BottomBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_BottomBG@2x.png"; sourceTree = "<group>"; };
 		CA50B830190A2E3000431C82 /* profile_TopBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_TopBG@2x.png"; sourceTree = "<group>"; };
@@ -601,7 +607,7 @@
 			children = (
 				4BA5453D190BE98E0069FF84 /* Fonts */,
 				48FDBCF718C6FF1B0026A51E /* Main.storyboard */,
-				48FDBCFA18C6FF9F0026A51E /* Carlos's */,
+				48FDBCFA18C6FF9F0026A51E /* Closet */,
 				483183D918FA6D52001DD247 /* PhotoEdits */,
 				48AF1E0B18C6F682009F07E3 /* WX */,
 				481D00FB18FBCD9600A0F6E7 /* Profile */,
@@ -701,8 +707,11 @@
 				4827D362190C20220087B4EB /* cloud.png */,
 				4827D363190C20220087B4EB /* cloud@2x.png */,
 				4827D36C190F7C500087B4EB /* Default-568h@2x.png */,
+				B57EF5591B84F63800684470 /* weather_background.png */,
+				B57EF55A1B84F63800684470 /* weather_screen.png */,
 				4827D36D190F7C500087B4EB /* Default.png */,
 				4827D36E190F7C500087B4EB /* Default@2x.png */,
+				B57EF5571B84EC6300684470 /* blurBack11.png */,
 				4827D364190C20220087B4EB /* profileicon.png */,
 				4827D365190C20220087B4EB /* profileicon@2x.png */,
 				4827D360190C1E930087B4EB /* parseloginbg.jpg */,
@@ -838,7 +847,7 @@
 			path = WX;
 			sourceTree = "<group>";
 		};
-		48FDBCFA18C6FF9F0026A51E /* Carlos's */ = {
+		48FDBCFA18C6FF9F0026A51E /* Closet */ = {
 			isa = PBXGroup;
 			children = (
 				48FDBD2D18C702080026A51E /* Images.xcassets */,
@@ -873,6 +882,7 @@
 				48FDBCFF18C6FF9F0026A51E /* cdkClosetViewController.h */,
 				48FDBD0018C6FF9F0026A51E /* cdkClosetViewController.m */,
 			);
+			name = Closet;
 			path = "Carlos's";
 			sourceTree = "<group>";
 		};
@@ -1015,6 +1025,7 @@
 				60AA7E4F190B52A4006C3018 /* weather-broken.png in Resources */,
 				CA8B8C9B190BCE27002A0201 /* switchOn@2x.png in Resources */,
 				4827D33E190B6FB40087B4EB /* snowButton.png in Resources */,
+				B57EF55C1B84F63800684470 /* weather_screen.png in Resources */,
 				60AA7E5D190B52A4006C3018 /* weather-few@2x.png in Resources */,
 				60AA7E81190B52A4006C3018 /* weather-tstorm@2x.png in Resources */,
 				CA8B8C93190BBD7A002A0201 /* navBGblue.png in Resources */,
@@ -1052,6 +1063,7 @@
 				60AA7E9F190B52BC006C3018 /* settings@2x.png in Resources */,
 				60AA7E5B190B52A4006C3018 /* weather-few.png in Resources */,
 				4827D369190C20220087B4EB /* profileicon@2x.png in Resources */,
+				B57EF55B1B84F63800684470 /* weather_background.png in Resources */,
 				4827D368190C20220087B4EB /* profileicon.png in Resources */,
 				4827D340190B6FB40087B4EB /* moonButton@2x.png in Resources */,
 				4837C59C18A6AA140022CFDD /* InfoPlist.strings in Resources */,
@@ -1070,6 +1082,7 @@
 				4827D342190B6FB40087B4EB /* mistButton@2x.png in Resources */,
 				48FDBD3618C84CAD0026A51E /* outfit-1_Fotor.png in Resources */,
 				60AA7E99190B52BC006C3018 /* profile.png in Resources */,
+				B57EF5581B84EC6300684470 /* blurBack11.png in Resources */,
 				4827D34D190B6FB40087B4EB /* briskButton.png in Resources */,
 				4827D357190B6FB40087B4EB /* coldButton@2x.png in Resources */,
 				60AA7E93190B52BC006C3018 /* home@2x.png in Resources */,

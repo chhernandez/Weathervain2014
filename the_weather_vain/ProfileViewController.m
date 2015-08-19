@@ -32,10 +32,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    /*
     FAKFontAwesome *othersIcon = [FAKFontAwesome usersIconWithSize:15];
     FAKFontAwesome *myIcon = [FAKFontAwesome thLargeIconWithSize:15];
-    
+    */
     
 
     

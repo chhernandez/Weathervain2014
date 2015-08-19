@@ -59,11 +59,11 @@ BOOL retValue;
                     
                     if (!error) {
                         // The find succeeded.
-                        NSLog(@"Successfully retrieved %d objects.", objects.count);
+                        NSLog(@"Successfully retrieved %lu objects.", (unsigned long)objects.count);
                         // Do something with the found objects
                         
                         if (objects.count == 0) {
-                            NSLog(@" No objects to delete: %d objects.", objects.count);
+                            NSLog(@" No objects to delete: %lu objects.", (unsigned long)objects.count);
                         } else {
                             
                             
@@ -257,6 +257,29 @@ BOOL retValue;
     
     // check to see if user is log in, else send user to login screen
     //  NSLog(@"current user %@", [PFUser currentUser]);
+    
+    
+    
+    
+    /******* NAVIGATION BAR *******/
+    
+    // for back button and arrow
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    //self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    // title - roboto
+    
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor whiteColor],NSForegroundColorAttributeName,
+      [UIFont fontWithName:@"RobotoCondensed-Light" size:21],
+      NSFontAttributeName,
+      nil]];
+    [self.navigationController.navigationBar setTranslucent:NO];
+    
     
     
     

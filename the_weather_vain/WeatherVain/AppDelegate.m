@@ -37,8 +37,25 @@
     self.tabBarController.selectedIndex = 0;
     
     
- [[UILabel appearance] setFont:[UIFont fontWithName:@"RobotoCondensed-Regular" size:16.0]];
     
+    
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor],
+       NSFontAttributeName:[UIFont fontWithName:@"RobotoCondensed-Light" size:21]
+       }
+     forState:UIControlStateNormal];
+    
+    
+    
+    /*
+
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                                                            NSForegroundColorAttributeName: [UIColor greenColor],
+                                                            NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:20.0f],
+                                                            
+      }];*/
     
     // sets custom background for tab bar
     //UITabBar *tabBar = [UITabBar appearance]; [tabBar setBackgroundImage:[UIImage imageNamed:@"tabBG" ]];

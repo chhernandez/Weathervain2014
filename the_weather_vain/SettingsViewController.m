@@ -46,9 +46,11 @@
     self.navigationItem.hidesBackButton = YES;
     
     // navigation bar
+    /*
     UINavigationBar *home_NavBar = [self.navigationController navigationBar];
     UIImage *img = [UIImage imageNamed:@"navBGblue.png"];
     [home_NavBar setBackgroundImage:img forBarMetrics:UIBarMetricsDefault];
+    */
     
     // no extra lines below tavle view
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -84,7 +86,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 4;
+    return 3;
 }
 
 

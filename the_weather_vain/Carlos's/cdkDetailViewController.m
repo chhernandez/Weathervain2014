@@ -14,9 +14,12 @@
 #import "cdkClosetViewController.h"
 #import "SettingsViewController.h"
 #import "WVTabBarViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @interface cdkDetailViewController ()
+
+@property (strong, nonatomic) IBOutlet UIView *image_container;
 
 - (void)configureView;
 @end
@@ -107,6 +110,11 @@
     } */
     
    // NSLog(@"this item has a rating =: %@", [self.detailItem objectForKey:@"Rating"]);
+    
+    _image_container.layer.cornerRadius = _image_container.frame.size.height /2;
+    _image_container.layer.masksToBounds = YES;
+    
+    
     
     NSNumber *myRating = [self.detailItem objectForKey:@"Rating"];
     
